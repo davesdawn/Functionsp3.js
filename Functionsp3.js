@@ -2,3 +2,4 @@
 letter and the function will count the number of occurrences of the specified 
 letter within the string.*/ 
 
+//Explanation
