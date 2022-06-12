@@ -14,9 +14,23 @@ function countCharacters(str, letter) {
 	for (let index = 0; index < str.length; index++){
 
 //Write an conditional statment to execute when condition is meant
-	if (str.toLowerCase().charAt(index) == letter) {
+	if (str.toLowerCase().charAt(index) === letter) {
 		numOfOccurrences += 1;
 	}		
+	}
+	return numOfOccurrences;
+}
+
+console.log(countCharacters("One can choose to go back toward safety or forward toward growth.", "o"));
+
+//Solution 
+
+function countCharacters(str, letter) {
+	let numOfOccurrences = 0;
+	for (let index = 0; index < str.length; index++){
+		if (str.toLowerCase().charAt(index) === letter){
+			numOfOccurrences += 1; 
+		}
 	}
 	return numOfOccurrences;
 }
